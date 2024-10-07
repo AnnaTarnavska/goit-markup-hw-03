@@ -177,3 +177,25 @@ h2 {
 .logo-footer {
     color: #F4F4FD;
 }
+
+.container {
+    max-width: 1440px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
