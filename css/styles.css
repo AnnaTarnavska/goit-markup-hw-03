@@ -35,16 +35,16 @@ a {
     list-style: none;
 }
 
-header {
+.header-div {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc;
 }
 
-.page-header {
+.header-div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #FFFFFF;
 }
 
 .header-menu {
@@ -121,6 +121,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 188px 0;
 }
 
 .main-info {
@@ -143,11 +144,15 @@ header {
     cursor: pointer;
     color: #FFFFFF;
     background-color: #4D5AE5;
+    display: block;
     padding: 16px 32px;
     border-radius: 4px;
     display: flex;
+    min-width: 169px;
+    height: 56px;
     margin: 0 auto;
     margin-top: 48px;
+    border: none;
 }
 
 .button:hover,
@@ -179,6 +184,7 @@ h2 {
 
 img {
     display: block;
+    justify-content: center;
     max-width: 100%;
     height: auto;
 }
@@ -189,6 +195,10 @@ img {
     margin: 0 auto;
     gap: 24px;
 
+}
+
+.feature-item {
+    width: calc((100% - 72px) / 4);
 }
 
 .feature-name {
@@ -230,15 +240,15 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+
 }
 
 .member-info {
     display: block;
     min-height: 120px;
     margin: 0 auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    gap: 8px;
 }
 
 .our-team-section {
@@ -274,18 +284,18 @@ img {
     align-items: center;
     margin: 0 auto;
     gap: 24px;
+    row-gap: 48px;
     flex-wrap: wrap;
+}
+
+.product-info {
+    width: calc((100% - 48px) / 3);
 }
 
 .app-info {
     display: block;
-    gap: 8px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 16px;
-    border-right: 1px solid #FFFFFF;
-    border-bottom: 1px solid #FFFFFF;
-    border-left: 1px solid #FFFFFF;
+    padding: 32px 16p;
+    border: 1px solid #e7e9fc;
 }
 
 .app {
@@ -294,6 +304,7 @@ img {
     line-height: 120%;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin-bottom: 8px;
 }
 
 .portfolio {
@@ -310,14 +321,14 @@ img {
     letter-spacing: 0.02em;
     color: #F4F4FD;
     background-color: #2E2F42;
-    padding-top: 100px;
-    padding-bottom: 82px;
+    padding: 100px 0;
 }
 
 .footer-container {
-    display: block;
+    display: inline-block;
     align-items: center;
     margin: 0 auto;
+    margin-bottom: 16px;
 }
 
 .logo-footer {
