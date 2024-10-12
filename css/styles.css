@@ -44,6 +44,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #FFFFFF;
 }
 
 .header-menu {
@@ -163,8 +164,23 @@ h2 {
     color: #2E2F42;
 }
 
-.name-mailn-section {
-    display: none;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+img {
+    display: block,
+        max-width: 100%,
+        height: auto
 }
 
 .features-section {
@@ -221,7 +237,7 @@ h2 {
     min-height: 120px;
     margin: 0 auto;
     padding-top: 32px;
-    border-top: 0px solid #FFFFFF;
+    padding-bottom: 32px;
     gap: 8px;
 }
 
@@ -261,15 +277,23 @@ h2 {
     flex-wrap: wrap;
 }
 
+.app-info {
+    display: block;
+    gap: 8px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    border-right: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+}
+
 .app {
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    padding-top: 32px;
-    padding-bottom: 4px;
-    padding-left: 16px;
 }
 
 .portfolio {
@@ -277,9 +301,6 @@ h2 {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
-    padding-top: 4px;
-    padding-bottom: 32px;
-    padding-left: 16px;
 }
 
 .footer {
